@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureToken - Advanced Tokenization Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SecureToken: Advanced Data Security Solution</h1>
+        <p>Tokenization with encryption, RBAC, and batch processing for secure data management.</p>
+    </header>
+
+    <!-- Tokenization Section -->
+    <section id="tokenize-section">
+        <h2>Tokenization & Detokenization</h2>
+        <p>Convert and retrieve sensitive data with advanced encryption and tokenization.</p>
+        <input type="text" id="sensitive-data" placeholder="Enter sensitive data">
+        <button id="tokenize-btn">Tokenize Data</button>
+        <button id="detokenize-btn">Detokenize Data</button>
+
+        <div id="token-result">
+            <p><strong>Token:</strong> <span id="token-value"></span></p>
+            <p><strong>Original Data:</strong> <span id="original-value"></span></p>
+        </div>
+    </section>
+
+    <!-- Batch Processing Section -->
+    <section id="batch-processing-section">
+        <h2>Batch Processing</h2>
+        <textarea id="batch-data" rows="4" placeholder="Enter sensitive data (comma separated)"></textarea>
+        <button id="batch-tokenize-btn">Batch Tokenize</button>
+        <button id="batch-detokenize-btn">Batch Detokenize</button>
+
+        <div id="batch-result">
+            <p><strong>Batch Tokens:</strong> <span id="batch-token-value"></span></p>
+            <p><strong>Batch Original Data:</strong> <span id="batch-original-value"></span></p>
+        </div>
+    </section>
+
+    <!-- RBAC Section -->
+    <section id="rbac-section">
+        <h2>Role-Based Access Control (RBAC)</h2>
+        <p>Ensure that only authorized users can manage tokenized data.</p>
+        <button id="admin-login-btn">Login as Admin</button>
+        <button id="user-login-btn">Login as User</button>
+        <p><strong>Current Role:</strong> <span id="current-role">None</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
