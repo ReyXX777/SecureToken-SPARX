@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureToken - Data Security Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SecureToken: Data Security Solution</h1>
+        <p>Tokenization can secure sensitive information by replacing it with a token, reducing the risk of data breaches.</p>
+    </header>
+
+    <section id="tokenize-section">
+        <h2>Tokenization Engine</h2>
+        <p>Convert sensitive data into unique tokens to enhance security.</p>
+
+        <input type="text" id="sensitive-data" placeholder="Enter sensitive data">
+        <button id="tokenize-btn">Tokenize Data</button>
+
+        <div id="token-result">
+            <p><strong>Token:</strong> <span id="token-value"></span></p>
+        </div>
+    </section>
+
+    <section id="vault-section">
+        <h2>Token Vault</h2>
+        <p>Securely store and manage the mapping between tokens and original data.</p>
+        <button id="view-vault-btn">View Token Vault</button>
+    </section>
+
+    <section id="audit-logging-section">
+        <h2>Audit Logging</h2>
+        <p>Track all tokenization and detokenization activities for compliance.</p>
+        <button id="view-logs-btn">View Audit Logs</button>
+    </section>
+
+    <section id="compliance-section">
+        <h2>Compliance</h2>
+        <p>Ensure compliance with GDPR, CCPA, and other data protection regulations.</p>
+    </section>
+
+    <!-- Lightboxes -->
+    <div id="vault-lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <h3>Token Vault</h3>
+            <ul id="vault-list">
+                <!-- List of tokens and sensitive data will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="logs-lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <h3>Audit Logs</h3>
+            <ul id="logs-list">
+                <!-- Audit log will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
