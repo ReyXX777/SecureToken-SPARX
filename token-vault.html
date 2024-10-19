@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureToken - Token Vault with Advanced Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SecureToken: Advanced Token Vault</h1>
+        <p>Secure storage with encryption, RBAC, and audit trails.</p>
+    </header>
+
+    <!-- Token Vault Section -->
+    <section id="vault-section">
+        <h2>Token Vault</h2>
+        <p>Search, store, and manage tokens with encryption and RBAC.</p>
+        <input type="text" id="token-search" placeholder="Search by token">
+        <button id="search-token-btn">Search Token</button>
+        
+        <div id="vault-result">
+            <p><strong>Original Data:</strong> <span id="original-data"></span></p>
+            <p><strong>Status:</strong> <span id="token-status"></span></p>
+        </div>
+    </section>
+
+    <!-- Token Vault Management -->
+    <section id="vault-management">
+        <h2>Vault Management</h2>
+        <button id="backup-btn">Backup Vault</button>
+        <button id="monitoring-btn">Enable Real-Time Monitoring</button>
+        <button id="set-expiry-btn">Set Token Expiry</button>
+        <button id="anonymize-btn">Anonymize Data</button>
+    </section>
+
+    <!-- MFA Section -->
+    <section id="mfa-section">
+        <h2>Multi-Factor Authentication (MFA)</h2>
+        <p>Secure your vault with MFA for enhanced security.</p>
+        <button id="enable-mfa-btn">Enable MFA</button>
+        <button id="disable-mfa-btn">Disable MFA</button>
+        <p><strong>MFA Status:</strong> <span id="mfa-status">Disabled</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
